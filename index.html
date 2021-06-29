@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <title>Dictionary</title>
+  </head>
+  <body>
+
+    <div class="container text-center">
+      <h4>Dictionary</h4>
+      <form class="form-inline m-5" id="adding">
+        <div class="container">
+          <input  type="text" class="form-control" id="inputWord" placeholder="Add a word to the dictionary">
+          <button class="btn btn-success" onclick="addWord()"> Add </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="container text-center">
+      <form class="form-inline m-5">
+        <div class="container">
+          <input type="text" class="form-control" id="checkWord" placeholder="Type a word you want to search">
+          <button class="btn btn-primary" onclick="return verifyContainsWord()"> Verify </button>
+        </div>
+      </form>
+      <div style="display: none;" id="message"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
